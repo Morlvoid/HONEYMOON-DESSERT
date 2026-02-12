@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 45 100% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 100% 96%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 45 100% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 45 100% 48%;
+    --radius: 0.5rem;
+    
+    --color-primary: #F5B800;
+    --color-primary-light: #FFD93D;
+    --color-bg-yellow: #FFF9E6;
+    --color-bg-light: #FFFBF0;
+    --color-text-dark: #333333;
+    --color-text-medium: #666666;
+    --color-text-light: #999999;
+    --color-border: #E8E8E8;
+    --color-gray-bg: #F5F5F5;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#F5B800] text-white px-6 py-2 rounded-lg font-medium transition-all duration-300;
+  }
+  .btn-primary:hover {
+    @apply bg-[#E5A800] -translate-y-0.5;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-400;
+  }
+  .card-hover:hover {
+    @apply shadow-lg scale-[1.02];
+  }
+  
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-20;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

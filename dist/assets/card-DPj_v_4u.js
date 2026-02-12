@@ -1,0 +1,1 @@
+import{j as a}from"./index-kiCIfI36.js";import{b as s}from"./button-DPDK__u2.js";function e({className:r,...o}){return a.jsx("div",{"code-path":"src\\components\\ui\\card.tsx:7:5","data-slot":"card",className:s("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",r),...o})}export{e as C};
